@@ -84,7 +84,7 @@ def main():
         threshold = 0.9
 
         if sensor_value > threshold:
-            my_custom_event_generator.event.Message = ua.LocalizedText("Value is greter than th")
+            my_custom_event_generator.event.Message = ua.LocalizedText("Value is graeter than th")
             my_custom_event_generator.event.value =  ua.Variant(sensor_value, ua.VariantType.Float)
             my_custom_event_generator.event.alarmenabled =  ua.Variant( outputsEnabled , ua.VariantType.Boolean)
             my_custom_event_generator.event.Severity =  ua.Variant( 1 , ua.VariantType.Int32)
